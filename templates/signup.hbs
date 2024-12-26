@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><a href="/home">HOME</a></h1>
+
+    <div class="login">
+      <h1 id="login-text">Sign up</h1>
+      {{#if error}}
+        <p style="color: red;">{{error}}</p>
+      {{/if}}
+      <form action="/signup" method="POST">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+
+        <input type="text" name="username" placeholder="Username" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+
+        <input type="submit" value="Sign Up" id="register" />
+      </form>
+      <a href="/login">Log in</a>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() { const params =
+      new URLSearchParams(window.location.search); const email =
+      params.get("email"); if (email) { document.getElementById("email").value =
+      email; } });
+    </script>
+  </body>
+</html>

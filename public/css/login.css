@@ -1,0 +1,124 @@
+/* login.css */
+
+body {
+  background-color: var(--primary-dark);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dark: #060914;
+  --primary: #9dc0e3;
+  --blue-light: #d3e1ef;
+  --grey: #4d5968;
+  --dark-grey: #2e3746;
+  --border-color: #313a49;
+  --transparent: rgba(0, 0, 0, 0);
+  --bgr-01: rgba(52, 61, 77, 0.3);
+  --bgr-02: rgba(29, 35, 48, 0.3);
+  --black: black;
+}
+
+.login {
+  box-shadow: 0 0 10px var(--primary);
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin-top: 10%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-text {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  color: var(--primary);
+}
+
+form [type="submit"] {
+  background-color: var(--primary);
+  color: var(--primary-dark);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form [type="submit"]:hover {
+  background-color: var(--blue-light);
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 30px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+form [type="text"],
+form [type="password"],
+#email {
+  border-bottom: 1px solid var(--primary);
+  background-color: var(--bgr-01);
+  color: var(--primary);
+}
+
+form [type="text"]:hover,
+form [type="password"]:hover,
+#email:hover {
+  box-shadow: 0 0 10px var(--primary);
+}
+
+a {
+  position: relative;
+  font-size: 1.1em;
+  color: var(--primary); /* Set the initial color to white */
+  font-weight: 500;
+
+  text-decoration: none;
+}
+
+a::after {
+  transform: scale(0);
+
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: -40px;
+  bottom: -6px;
+  height: 3px;
+  background-color: #fff; /* Ensure the line color matches your link color */
+  outline: none;
+  cursor: pointer;
+  background: var(--primary);
+  transition: width 0.3s, transform 0.5s; /* Combine transitions */
+  font-weight: 500;
+  margin-left: 40px; /* Adjust spacing as needed */
+}
+a:hover::after {
+  transform: scaleX(1); /* Apply the hover effect */
+}
+form [type="submit"]:hover {
+  box-shadow: inset 0 0 15px var(--primary-dark);
+  transition: 0.3s ease-out;
+}
+form [type="submit"]:active {
+  transform: translateY(5px);
+  transition: 0.3s ease-out;
+}
+input {
+  outline: none;
+}
+input:focus {
+  box-shadow: 0 0 10px var(--primary);
+}

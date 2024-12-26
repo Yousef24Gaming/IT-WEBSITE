@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Web Development Course</title>
+  </head>
+  <body>
+    <div id="main-page">
+      <a href="../index.html" id="lklogo"
+        ><img src="../logo.png" id="logo" alt="Logo"
+      /></a>
+      <div class="main-nav">
+        <div class="nav">
+          <nav>
+            <ul class="nav-ul">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a>About <i class="bi bi-caret-down dropdown"></i></a>
+                <div class="nav-dp">
+                  <div class="dp">
+                    <a href="../about.html">About Us</a>
+                    <a href="../team.html">Team</a>
+                    <a href="../testimonials.html">Testimonials</a>
+                    <a href="../faq.html">FAQ</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="../news.html"
+                  >News <i class="bi bi-caret-down dropdown"></i
+                ></a>
+              </li>
+              <li>
+                <a href="../blogs.html"
+                  >Blogs <i class="bi bi-caret-down dropdown"></i
+                ></a>
+              </li>
+              <li onclick="goToCourses();">Courses</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="course-content">
+        <h1 class="text-1">Web Development Course</h1>
+        <p>
+          Dive into the world of web development with our comprehensive course
+          designed for beginners and experienced developers alike. Learn the
+          latest technologies and best practices to build responsive and dynamic
+          websites.
+        </p>
+
+        <div class="course-details">
+          <h2>Course Outline</h2>
+          <ul>
+            <li>Introduction to Web Development</li>
+            <li>HTML and CSS Fundamentals</li>
+            <li>JavaScript Programming</li>
+            <li>Responsive Design with Flexbox and Grid</li>
+            <li>Front-end Frameworks: React, Angular, Vue</li>
+            <li>Backend Development: Node.js, Express</li>
+            <li>Database Management: MongoDB, SQL</li>
+            <li>Deployment and Hosting</li>
+          </ul>
+        </div>
+
+        <div class="course-start">
+          <div class="button-container">
+            <button class="course-button" id="text-course">Text Lessons</button>
+            <button class="course-button" id="video-course">
+              Video Tutorials
+            </button>
+            <button class="course-button" id="document-course">
+              PDF Resources
+            </button>
+          </div>
+          <div id="t-course" class="course1">
+            <h3>Introduction to Web Development</h3>
+            <hr class="line" />
+
+            <h3>HTML and CSS Fundamentals</h3>
+            <hr class="line" />
+
+            <h3>JavaScript Programming</h3>
+            <hr class="line" />
+
+            <h3>Responsive Design with Flexbox and Grid</h3>
+            <hr class="line" />
+
+            <h3>Front-end Frameworks: React, Angular, Vue</h3>
+            <hr class="line" />
+
+            <h3>Backend Development: Node.js, Express</h3>
+            <hr class="line" />
+
+            <h3>Database Management: MongoDB, SQL</h3>
+            <hr class="line" />
+
+            <h3>Deployment and Hosting</h3>
+            <hr class="line" />
+          </div>
+          <div id="v-course" class="course1">
+            <div class="videos">
+              <h3>Introduction to Web Development</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="creator">
+                  <span>By Web Dev Simplified</span>
+                </div>
+              </div>
+              <h3>HTML and CSS Fundamentals</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="creator">
+                  <span>By Web Dev Simplified</span>
+                </div>
+              </div>
+              <h3>JavaScript Programming</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video"></div>
+                <div class="creator">
+                  <span>By freeCodeCamp.org </span>
+                </div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="creator">
+                  <span>By Bro Code</span>
+                </div>
+              </div>
+              <h3>Responsive Design with Flexbox and Grid</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="creator">
+                  <span>By Web Dev Simplified</span>
+                </div>
+              </div>
+              <h3>Front-end Frameworks: React, Angular, Vue</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video"></div>
+
+                <div class="video"></div>
+
+                <div class="creator">
+                  <span>By Programming with Mosh </span>
+                </div>
+                <div class="video"></div>
+                <div class="creator"><span> By freeCodeCamp.org </span></div>
+              </div>
+              <h3>Backend Development: Node.js, Express</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video"></div>
+
+                <div class="creator">
+                  <span>By Programming with Mosh </span>
+                </div>
+                <div class="video"></div>
+
+                <div class="creator"><span> By Web Dev Simplified </span></div>
+              </div>
+              <h3>Database Management: MongoDB, SQL</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video"></div>
+                <div class="video"></div>
+
+                <div class="creator"><span> By Web Dev Simplified </span></div>
+              </div>
+              <h3>Deployment and Hosting</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video"></div>
+
+                <div class="creator"><span> By freeCodeCamp.org </span></div>
+              </div>
+            </div>
+          </div>
+          <div id="d-course" class="course1">
+            <h3>Introduction to Web Development</h3>
+            <hr class="line" />
+            <button class="btn-open" id="bto1">Open</button>
+            <div class="container-pdf" id="pdf-1">
+              <embed
+                src="https://northell.design/wp-content/uploads/2021/11/A_Complete_Web_Development_Guide_For_Non_Technical_Startup_Founder.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h3>HTML and CSS Fundamentals</h3>
+            <hr class="line" />
+            <button class="btn-open" id="bto2">Open</button>
+            <div class="container-pdf" id="pdf-2">
+              <embed
+                src="https://www3.cs.stonybrook.edu/~pfodor/courses/CSE316/L03-HTML_CSS.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+
+            <h3>JavaScript Programming</h3>
+            <hr class="line" />
+            <button class="btn-open" id="bto3">Open</button>
+            <div class="container-pdf" id="pdf-3">
+              <embed
+                src="https://autotelicum.github.io/Smooth-CoffeeScript/literate/js-intro.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+
+            <h3>Responsive Design with Flexbox and Grid</h3>
+            <hr class="line" />
+            <h2>FlexBox</h2>
+            <button class="btn-open" id="bto4">Open</button>
+            <div class="container-pdf" id="pdf-4">
+              <embed
+                src="https://www.uaeurope.com/downloads/IntroducingCSSFlexboxLayout.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h2>Grid</h2>
+            <button class="btn-open" id="bto5">Open</button>
+            <div class="container-pdf" id="pdf-5">
+              <embed
+                src="https://www.albasinicosta.co.uk/content-management/css-grid.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+
+            <h3>Front-end Frameworks: React, Angular, Vue</h3>
+            <hr class="line" />
+            <h2>React</h2>
+            <button class="btn-open" id="bto6">Open</button>
+            <div class="container-pdf" id="pdf-6">
+              <embed
+                src="https://www.lcg.ufrj.br/nodejs/books/react-beginners-handbook"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h2>Angular</h2>
+            <button class="btn-open" id="bto7">Open</button>
+            <div class="container-pdf" id="pdf-7">
+              <embed
+                src="https://riptutorial.com/Download/angular.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h2>Vue</h2>
+            <button class="btn-open" id="bto8">Open</button>
+            <div class="container-pdf" id="pdf-8">
+              <embed
+                src="https://assets.ctfassets.net/zojzzdop0fzx/VU1dEpLKscEoPc2JHDbkZ/cce207f9051d2b53e3782a4f43eb7b5a/A_Complete_Guide_to_VueJS_by_This_Dot_authored_by_Bilal_Haidar.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+
+            <h3>Backend Development: Node.js, Express</h3>
+            <hr class="line" />
+            <h2>Node.js</h2>
+            <button class="btn-open" id="bto9">Open</button>
+            <div class="container-pdf" id="pdf-9">
+              <embed
+                src="https://www.anuragkapur.com/assets/blog/programming/node/PDF-Guide-Node-Andrew-Mead-v3.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h2>Express</h2>
+            <button class="btn-open" id="bto10">Open</button>
+            <div class="container-pdf" id="pdf-10">
+              <embed
+                src="https://riptutorial.com/Download/express.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h3>Database Management: MongoDB, SQL</h3>
+            <hr class="line" />
+            <h2>MongoDB</h2>
+            <button class="btn-open" id="bto11">Open</button>
+            <div class="container-pdf" id="pdf-11">
+              <embed
+                src="https://riptutorial.com/Download/mongodb.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h2>SQL</h2>
+
+            <button class="btn-open" id="bto12">Open</button>
+            <div class="container-pdf" id="pdf-12">
+              <embed
+                src="https://sql.sh/ressources/cours-sql-sh-.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h3>Deployment and Hosting</h3>
+            <hr class="line" />
+            <button class="btn-open" id="bto13">Open</button>
+            <div class="container-pdf" id="pdf-13">
+              <embed
+                src="https://hpi.de/fileadmin/user_upload/fachgebiete/plattner/teaching/SoftwaretechnikII/2020/SWT2_17_Deployment_and_DevOps.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <video
+        id="rotate-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        data-wf-ignore="true"
+        data-object-fit="cover"
+      >
+        <source
+          src="https://cdn.prod.website-files.com/662e228fa6dabae5dc92eaf4/662f8ab42141490d3ab1644b_7914827-hd_1280_720_30fps-transcode.mp4"
+          data-wf-ignore="true"
+        />
+        <source
+          src="https://cdn.prod.website-files.com/662e228fa6dabae5dc92eaf4/662f8ab42141490d3ab1644b_7914827-hd_1280_720_30fps-transcode.webm"
+          data-wf-ignore="true"
+          class="w-background-video"
+        />
+      </video>
+      <div class="cursor"></div>
+      <div class="courses">
+        <input
+          type="search"
+          placeholder="Search for courses"
+          id="search-course"
+          onkeydown="search(event);"
+        />
+        <button id="search-btn">Search</button>
+        <div class="courses-list">
+          <div class="course" data-course="web development">
+            <a href="../courses-pages/devW.html"
+              ><img src="../courses/wb.jpeg" alt="Web Development"
+            /></a>
+          </div>
+          <div class="course" data-course="programming language">
+            <a href="#"
+              ><img src="../courses/pl.jpeg" alt="Programming Language"
+            /></a>
+          </div>
+          <div class="course">
+            <a href="#"><img src="../courses/da.avif" alt="Data Analysis" /></a>
+          </div>
+          <div class="course" data-course="cybersecurity">
+            <a href="#"><img src="../courses/cb.avif" alt="Cybersecurity" /></a>
+          </div>
+          <div class="course" data-course="Cloud Computing">
+            <a href="#"
+              ><img src="../courses/cp.jpeg" alt="Cloud Computing"
+            /></a>
+          </div>
+          <div class="course" data-course="Data Management">
+            <a href="#"
+              ><img src="../courses/dm.jpeg" alt="Data Management"
+            /></a>
+          </div>
+          <div class="course" data-course="Mobile App Development">
+            <a href="#"
+              ><img src="../courses/mad.jpeg" alt="Mobile App Development"
+            /></a>
+          </div>
+          <div class="course" data-course="Virtual and Augmented Reality">
+            <a href="#"
+              ><img
+                src="../courses/vr.jpeg"
+                alt="Virtual and Augmented Reality"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <button id="up-btn"><i class="bi bi-arrow-up"></i></button>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>
+              <i class="bi bi-envelope"></i> Email:
+              <a href="mailto:feedback.tech24@gmail.com" id="mailto"
+                >feedback.tech24@gmail.com</a
+              >
+            </p>
+            <p><i class="bi bi-telephone"></i> Phone: +1 (123) 456-7890</p>
+          </div>
+          <div class="footer-section social">
+            <h2>Follow Me</h2>
+            <a
+              href="https://www.facebook.com/youssef.benslimen.98"
+              target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://x.com/Youssef24Gaming" target="_blank"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/youssef-ben-slimen-35a545298/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/yukito__24/" target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Tech_24. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="../script.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

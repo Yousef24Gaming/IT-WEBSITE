@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Web Development Course</title>
+  </head>
+  <body>
+    <div id="main-page">
+      <a href="../index.html" id="lklogo"
+        ><img src="../logo.png" id="logo" alt="Logo"
+      /></a>
+      <div class="main-nav">
+        <div class="nav">
+          <nav>
+            <ul class="nav-ul">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a>About <i class="bi bi-caret-down dropdown"></i></a>
+                <div class="nav-dp">
+                  <div class="dp">
+                    <a href="../other/about.html">About Us</a>
+                    <a href="../team.html">Team</a>
+                    <a href="../testimonials.html">Testimonials</a>
+                    <a href="../faq.html">FAQ</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="../other/news.html">News</a>
+              </li>
+
+              <li onclick="goToCourses();">Courses</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main">
+        <p class="big-text">Discover our latest news</p>
+        <p>
+          Immerse Yourself in the World of Technology: Your Ultimate Destination
+          for Tech News, Course Reviews, and More!
+        </p>
+        <div class="sign" style="margin-bottom: 50px">Blog & news</div>
+        <div class="news-content">
+          <div class="new">
+            <div class="img-new">
+              <img src="../courses-pages/news-images/deepfake.png" alt="" />
+            </div>
+            <div class="title">AI and Deepfake Technology</div>
+            <div class="foot-new">
+              <button>Learn more</button>
+              <span>July 8,2024</span>
+            </div>
+          </div>
+          <div class="new">
+            <div class="img-new">
+              <img src="../courses-pages/news-images/blackwell.jpg" alt="" />
+            </div>
+            <div class="title">
+              Nvidia Unveils Groundbreaking Blackwell Architecture: The Future
+              of AI and Graphics Processing
+            </div>
+            <div class="foot-new">
+              <button>Learn more</button>
+              <span>July 9,2024</span>
+            </div>
+          </div>
+          <div class="new">
+            <div class="img-new">
+              <img src="../courses-pages/news-images/neurelink.jpeg" alt="" />
+            </div>
+            <div class="title">
+              Neuralink's First Implant Patient Achieves Breakthrough in
+              Brain-Computer Interface
+            </div>
+            <div class="foot-new">
+              <button>Learn more</button>
+              <span>July 9,2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <video
+        id="rotate-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        data-wf-ignore="true"
+        data-object-fit="cover"
+      >
+        <source
+          src="https://cdn.prod.website-files.com/662e228fa6dabae5dc92eaf4/662f8ab42141490d3ab1644b_7914827-hd_1280_720_30fps-transcode.mp4"
+          data-wf-ignore="true"
+        />
+        <source
+          src="https://cdn.prod.website-files.com/662e228fa6dabae5dc92eaf4/662f8ab42141490d3ab1644b_7914827-hd_1280_720_30fps-transcode.webm"
+          data-wf-ignore="true"
+          class="w-background-video"
+        />
+      </video>
+      <div class="cursor"></div>
+      <div class="courses">
+        <input
+          type="search"
+          placeholder="Search for courses"
+          id="search-course"
+          onkeydown="search(event);"
+        />
+        <button id="search-btn">Search</button>
+        <div class="courses-list">
+          <div class="course" data-course="web development">
+            <a href="../courses-pages/devW.html"
+              ><img src="../courses/wb.jpeg" alt="Web Development"
+            /></a>
+          </div>
+          <div class="course" data-course="programming language">
+            <a href="#"
+              ><img src="../courses/pl.jpg" alt="Programming Language"
+            /></a>
+          </div>
+          <div class="course">
+            <a href="#"><img src="../courses/da.avif" alt="Data Analysis" /></a>
+          </div>
+          <div class="course" data-course="cybersecurity">
+            <a href="#"><img src="../courses/cb.avif" alt="Cybersecurity" /></a>
+          </div>
+          <div class="course" data-course="Cloud Computing">
+            <a href="#"
+              ><img src="../courses/cp.jpeg" alt="Cloud Computing"
+            /></a>
+          </div>
+          <div class="course" data-course="Data Management">
+            <a href="#"
+              ><img src="../courses/dm.jpeg" alt="Data Management"
+            /></a>
+          </div>
+          <div class="course" data-course="Mobile App Development">
+            <a href="#"
+              ><img src="../courses/mad.jpeg" alt="Mobile App Development"
+            /></a>
+          </div>
+          <div class="course" data-course="Virtual and Augmented Reality">
+            <a href="#"
+              ><img
+                src="../courses/vr.jpeg"
+                alt="Virtual and Augmented Reality"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <button id="up-btn"><i class="bi bi-arrow-up"></i></button>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>
+              <i class="bi bi-envelope"></i> Email:
+              <a href="mailto:feedback.tech24@gmail.com" id="mailto"
+                >feedback.tech24@gmail.com</a
+              >
+            </p>
+            <p><i class="bi bi-telephone"></i> Phone: +1 (123) 456-7890</p>
+          </div>
+          <div class="footer-section social">
+            <h2>Follow Me</h2>
+            <a
+              href="https://www.facebook.com/youssef.benslimen.98"
+              target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://x.com/Youssef24Gaming" target="_blank"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/youssef-ben-slimen-35a545298/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/yukito__24/" target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Tech_24. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="../script.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Web Development Course</title>
+  </head>
+  <body>
+    <div id="main-page">
+      <a href="/" id="lklogo"><img src="../logo.png" id="logo" alt="Logo" /></a>
+      <div class="main-nav">
+        <div class="nav">
+          <nav>
+            <ul class="nav-ul">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a>About <i class="bi bi-caret-down dropdown"></i></a>
+                <div class="nav-dp">
+                  <div class="dp">
+                    <a href="../about.html">About Us</a>
+                    <a href="../team.html">Team</a>
+                    <a href="../testimonials.html">Testimonials</a>
+                    <a href="../faq.html">FAQ</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="other/news.html">News</a>
+              </li>
+
+              <li onclick="goToCourses();">Courses</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="course-content">
+        <h1 class="text-1">Web Development Course</h1>
+        <p>
+          Dive into the world of web development with our comprehensive course
+          designed for beginners and experienced developers alike. Learn the
+          latest technologies and best practices to build responsive and dynamic
+          websites.
+        </p>
+
+        <div class="course-details">
+          <h2>Course Outline</h2>
+          <ul>
+            <li>Introduction to Web Development</li>
+            <li>HTML and CSS Fundamentals</li>
+            <li>JavaScript Programming</li>
+            <li>Responsive Design with Flexbox and Grid</li>
+            <li>Front-end Frameworks: React, Angular, Vue</li>
+            <li>Backend Development: Node.js, Express</li>
+            <li>Database Management: MongoDB, SQL</li>
+            <li>Deployment and Hosting</li>
+          </ul>
+        </div>
+
+        <div class="course-start">
+          <div class="button-container">
+            <button class="course-button" id="text-course">Text Lessons</button>
+            <button class="course-button" id="video-course">
+              Video Tutorials
+            </button>
+            <button class="course-button" id="document-course">
+              PDF Resources
+            </button>
+          </div>
+          <div id="t-course" class="course1">
+            <h3>Introduction to Web Development</h3>
+            <hr class="line" />
+            <p>
+              Web development is the process of creating websites and web
+              applications for the Internet or an intranet (a private network).
+              It involves a variety of tasks, from coding in different
+              programming languages to designing user interfaces and
+              experiences. Web development can be broadly divided into three
+              categories: front-end development, back-end development, and
+              full-stack development.
+            </p>
+
+            <h2>History of Web Development</h2>
+            <p>
+              The history of web development dates back to the early 1990s when
+              Tim Berners-Lee, a British scientist, invented the World Wide Web
+              (WWW). The web was initially conceived as a means for scientists
+              to share information across different networks. The first website
+              was created in 1991, and it was a simple, text-based page that
+              provided information about the World Wide Web project.
+            </p>
+
+            <p>
+              In the mid-1990s, the web started to gain popularity among the
+              general public, leading to the creation of more user-friendly web
+              browsers like Netscape Navigator. This era also saw the
+              introduction of HTML (HyperText Markup Language) and CSS
+              (Cascading Style Sheets), which became the foundational
+              technologies for web development.
+            </p>
+
+            <h2>Importance of Web Development</h2>
+            <p>
+              Today, web development is a crucial aspect of the digital world.
+              Websites and web applications are integral to the functioning of
+              businesses, educational institutions, government agencies, and
+              entertainment platforms. Effective web development ensures that
+              websites are functional, user-friendly, and accessible to a global
+              audience.
+            </p>
+
+            <p>
+              With the rise of mobile devices and the increasing demand for
+              online services, the scope and complexity of web development have
+              expanded significantly. Developers now need to consider responsive
+              design, cross-browser compatibility, and performance optimization
+              to meet the diverse needs of users.
+            </p>
+
+            <h2>Categories of Web Development</h2>
+            <ul>
+              <li>
+                <strong>Front-end Development:</strong> Also known as
+                client-side development, this focuses on everything that users
+                visually interact with on their web browsers. It involves
+                languages like HTML, CSS, and JavaScript, as well as frameworks
+                and libraries like React, Angular, and Vue.js.
+              </li>
+              <li>
+                <strong>Back-end Development:</strong> Also known as server-side
+                development, this involves creating and maintaining the
+                technology that powers the front-end. It includes server,
+                database, and application integration using languages like
+                Node.js, Python, Ruby, PHP, and Java.
+              </li>
+              <li>
+                <strong>Full-stack Development:</strong> Full-stack developers
+                have the skills to work on both the front-end and back-end of a
+                web application. They have a comprehensive understanding of how
+                web applications function from top to bottom.
+              </li>
+            </ul>
+
+            <h2>Key Concepts in Web Development</h2>
+            <ul>
+              <li>
+                <strong>HTML (HyperText Markup Language):</strong> The standard
+                language for creating web pages. HTML elements form the building
+                blocks of all websites.
+              </li>
+              <li>
+                <strong>CSS (Cascading Style Sheets):</strong> A style sheet
+                language used for describing the presentation of a document
+                written in HTML or XML. CSS describes how elements should be
+                rendered on screen, on paper, in speech, or on other media.
+              </li>
+              <li>
+                <strong>JavaScript:</strong> A programming language that enables
+                interactive web pages. It is an essential part of web
+                applications, allowing for dynamic content and user
+                interactions.
+              </li>
+              <li>
+                <strong>Responsive Design:</strong> An approach to web
+                development that makes web pages render well on a variety of
+                devices and window or screen sizes. It ensures that users have a
+                good viewing experience on any device, from desktops to mobile
+                phones.
+              </li>
+              <li>
+                <strong>Version Control:</strong> A system that records changes
+                to a file or set of files over time so that specific versions
+                can be recalled later. Git is one of the most popular version
+                control systems.
+              </li>
+              <li>
+                <strong>Web Hosting:</strong> The service of providing storage
+                space for a website or application on a server on the Internet.
+                Web hosting allows websites to be accessible via the World Wide
+                Web.
+              </li>
+            </ul>
+            <h3>HTML and CSS Fundamentals</h3>
+            <hr class="line" />
+            <p>
+              HTML (HyperText Markup Language) and CSS (Cascading Style Sheets)
+              are the foundational technologies for building web pages. HTML
+              provides the structure of the page, while CSS is used to control
+              the presentation, formatting, and layout.
+            </p>
+
+            <h2>HTML Basics</h2>
+            <p>
+              HTML is a markup language that uses tags to structure content on a
+              webpage. Each HTML document consists of a tree structure of
+              elements. The most common elements include headings, paragraphs,
+              lists, links, images, and forms.
+            </p>
+            <p>
+              HTML documents begin with a &lt;!DOCTYPE&gt; declaration, followed
+              by the &lt;html&gt; element, which contains the &lt;head&gt;> and
+              &lt;body&gt; elements. The &lt;head&gt; element contains
+              meta-information about the document, such as its title and links
+              to CSS files. The &lt;body&gt; element contains the content that
+              is displayed on the webpage.
+            </p>
+
+            <h2>CSS Basics</h2>
+            <p>
+              CSS is used to style HTML elements. It allows developers to apply
+              styles such as colors, fonts, spacing, and layout to web pages.
+              CSS can be applied directly within HTML elements, embedded within
+              the &lt;head&gt; section of an HTML document, or linked as an
+              external stylesheet.
+            </p>
+            <p>
+              CSS uses selectors to target HTML elements and apply styles.
+              Common selectors include element selectors, class selectors, and
+              ID selectors. CSS properties are then used to define the styles,
+              such as color, font-size, margin, and padding.
+            </p>
+            <h3>JavaScript Programming</h3>
+            <hr class="line" />
+            <p>
+              JavaScript is a powerful scripting language that enables dynamic
+              content and interactive features on web pages. It allows
+              developers to create responsive user interfaces, manipulate HTML
+              and CSS, and communicate with web servers.
+            </p>
+
+            <h2>JavaScript Basics</h2>
+            <p>
+              JavaScript code is executed in the browser, allowing it to respond
+              to user actions such as clicks, input, and form submissions. It
+              can be embedded directly within HTML documents using the
+              &lt;script&gt; tag or included as an external file.
+            </p>
+            <p>
+              JavaScript uses variables, functions, and events to perform
+              actions. Variables are used to store data, functions are used to
+              define reusable code blocks, and events are used to trigger code
+              execution based on user interactions.
+            </p>
+
+            <h2>DOM Manipulation</h2>
+            <p>
+              The Document Object Model (DOM) is a programming interface for
+              HTML and XML documents. It represents the structure of a document
+              as a tree of objects, allowing JavaScript to interact with and
+              manipulate the content and structure of web pages.
+            </p>
+            <p>
+              JavaScript provides methods for selecting, creating, and modifying
+              DOM elements. Common methods include getElementById,
+              querySelector, createElement, and appendChild.
+            </p>
+            <h3>Responsive Design with Flexbox and Grid</h3>
+            <hr class="line" />
+            <p>
+              Responsive design ensures that web pages look and function well on
+              different devices and screen sizes. Flexbox and Grid are powerful
+              CSS layout models that make it easier to create flexible and
+              responsive layouts.
+            </p>
+
+            <h2>Flexbox</h2>
+            <p>
+              Flexbox is a one-dimensional layout model that allows developers
+              to create flexible and responsive layouts. It is designed to
+              distribute space along a single axis (horizontal or vertical)
+              within a container and align items within that container.
+            </p>
+            <p>
+              The main components of Flexbox are the container and the items
+              within the container. CSS properties such as display,
+              flex-direction, justify-content, align-items, and flex-wrap are
+              used to control the layout and alignment of Flexbox items.
+            </p>
+
+            <h2>Grid</h2>
+            <p>
+              Grid is a two-dimensional layout model that allows developers to
+              create complex and responsive layouts. It is designed to
+              distribute space both horizontally and vertically within a
+              container, creating a grid of rows and columns.
+            </p>
+            <p>
+              The main components of Grid are the container and the items within
+              the container. CSS properties such as display,
+              grid-template-columns, grid-template-rows, grid-gap, and
+              justify-items are used to control the layout and alignment of Grid
+              items.
+            </p>
+            <h3>Front-end Frameworks: React, Angular, Vue</h3>
+            <hr class="line" />
+            <p>
+              Front-end frameworks are libraries of pre-written code that
+              provide a structure for building web applications. They help
+              developers create complex and dynamic user interfaces more
+              efficiently. The most popular front-end frameworks include React,
+              Angular, and Vue.
+            </p>
+
+            <h2>React</h2>
+            <p>
+              React is a JavaScript library for building user interfaces. It is
+              maintained by Facebook and is widely used for creating single-page
+              applications. React uses a component-based architecture, allowing
+              developers to build reusable UI components.
+            </p>
+            <p>
+              React components are written in JSX (JavaScript XML), a syntax
+              that allows HTML to be written within JavaScript. React also uses
+              a virtual DOM to efficiently update and render components.
+            </p>
+
+            <h2>Angular</h2>
+            <p>
+              Angular is a front-end framework developed and maintained by
+              Google. It is a full-featured framework for building dynamic and
+              responsive web applications. Angular uses a component-based
+              architecture, two-way data binding, and dependency injection.
+            </p>
+            <p>
+              Angular applications are written in TypeScript, a superset of
+              JavaScript that adds static typing. Angular also provides a set of
+              powerful tools and libraries for building complex applications.
+            </p>
+
+            <h2>Vue</h2>
+            <p>
+              Vue is a progressive JavaScript framework for building user
+              interfaces. It is designed to be incrementally adoptable, meaning
+              developers can use as much or as little of the framework as
+              needed. Vue uses a component-based architecture and a reactive
+              data-binding system.
+            </p>
+            <p>
+              Vue components are written using a template syntax that allows
+              HTML, CSS, and JavaScript to be combined within a single file. Vue
+              also provides a set of tools and libraries for building complex
+              applications.
+            </p>
+            <h3>Backend Development: Node.js, Express</h3>
+            <hr class="line" />
+            <p>
+              Backend development involves creating and maintaining the server,
+              database, and application logic that power the front-end. Node.js
+              and Express are popular tools for building backend applications.
+            </p>
+
+            <h2>Node.js</h2>
+            <p>
+              Node.js is a JavaScript runtime built on Chrome's V8 JavaScript
+              engine. It allows developers to run JavaScript on the server side,
+              enabling full-stack development using a single programming
+              language.
+            </p>
+            <p>
+              Node.js is known for its non-blocking, event-driven architecture,
+              which makes it ideal for building scalable and high-performance
+              web applications.
+            </p>
+
+            <h2>Express</h2>
+            <p>
+              Express is a minimal and flexible Node.js web application
+              framework that provides a robust set of features for building web
+              and mobile applications. It is used to create APIs and handle
+              routing, request handling, and middleware in Node.js applications.
+            </p>
+            <p>
+              Express simplifies the process of building server-side
+              applications by providing a set of tools and conventions for
+              managing routes, handling requests, and integrating with
+              databases.
+            </p>
+            <h3>Database Management: MongoDB, SQL</h3>
+            <hr class="line" />
+            <p>
+              Databases are used to store and manage data in web applications.
+              MongoDB and SQL are two popular database technologies with
+              different approaches to data storage and retrieval.
+            </p>
+
+            <h2>MongoDB</h2>
+            <p>
+              MongoDB is a NoSQL database that stores data in flexible,
+              JSON-like documents. It is designed for scalability and
+              performance, making it suitable for handling large volumes of
+              unstructured or semi-structured data.
+            </p>
+            <p>
+              MongoDB uses a document-oriented data model, where data is stored
+              in collections of documents. Each document can have a different
+              structure, allowing for greater flexibility in data modeling.
+            </p>
+
+            <h2>SQL</h2>
+            <p>
+              SQL (Structured Query Language) is a standard language for
+              managing and manipulating relational databases. SQL databases
+              store data in tables with predefined schemas, making them ideal
+              for handling structured data.
+            </p>
+            <p>
+              SQL databases use a relational data model, where data is organized
+              into tables with rows and columns. Relationships between tables
+              are defined using foreign keys, allowing for complex queries and
+              data manipulation.
+            </p>
+            <h3>Deployment and Hosting</h3>
+            <hr class="line" />
+            <p>
+              Deployment and hosting are the final steps in the web development
+              process, making a web application accessible to users on the
+              Internet. There are various methods and services available for
+              deploying and hosting web applications.
+            </p>
+
+            <h2>Deployment</h2>
+            <p>
+              Deployment involves transferring the web application from a
+              development environment to a production environment. This process
+              includes setting up servers, configuring environments, and
+              ensuring that the application is ready for public use.
+            </p>
+            <p>
+              Common deployment methods include using cloud services like AWS,
+              Azure, and Google Cloud, as well as containerization technologies
+              like Docker and Kubernetes.
+            </p>
+
+            <h2>Hosting</h2>
+            <p>
+              Hosting is the service of providing storage space and resources
+              for a web application on a server. Hosting providers offer various
+              plans and features, such as shared hosting, VPS hosting, and
+              dedicated hosting.
+            </p>
+            <p>
+              When choosing a hosting provider, developers should consider
+              factors like server performance, scalability, security, and
+              support. Popular hosting providers include
+              <a href="https://www.hostinger.com">Hostinger</a> ,<a
+                href="https://www.namecheap.com"
+                >Namecheap</a
+              >, <a href="https://www.bluehost.com">Bluehost</a>, and
+              <a href="https://www.godaddy.com/en-ph">GoDaddy</a>.
+            </p>
+          </div>
+          <div id="v-course" class="course1">
+            <div class="videos">
+              <h3>Introduction to Web Development</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/HfTXHrWMGVY?si=wtxqbpwKFO74uKJV"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/88QJumITbQA?si=drUiTz6QtJndKmXl"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="creator">
+                  <span>By Web Dev Simplified</span>
+                </div>
+              </div>
+              <h3>HTML and CSS Fundamentals</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/BvJYXl2ywUE?si=lSKyF3KzU_Gm2e0D"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/PypMN-yui4Y?si=ZcMoiCJKq_PsYcTP"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/1rbo_HHt5nw?si=keAq4d_gWfOv8fGz"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/bFvjE4ZRtSE?si=pp0aClA2ABIdkdJD"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/1PnVor36_40?si=QqXFgp9ct7gaFXOu"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/l1mER1bV0N0?si=c0smhl_1Cp-LY39B"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/CHyPGSpIhSs?si=IzhuzGaMt9cf-PUx"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="creator">
+                  <span>By Web Dev Simplified</span>
+                </div>
+              </div>
+              <h3>JavaScript Programming</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/PkZNo7MFNFg?si=AYUBxc_xzORSegm1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="creator">
+                  <span>By freeCodeCamp.org </span>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/STEfmxQjO2Q?si=M4chBGrbGQ6pw4xX"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/my3f_sUObhE?si=X2Ce1NJAedjlOOVz"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/WBiq2j95DP8?si=pJse8foM9c2uq3U4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/fARJwGqdbKQ?si=RxkdggxhRbroJSNN"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/I68O9oazLbo?si=9oyOwoERrZTOq01j"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/49S8P_MFGOY?si=_vSkbvoIiM6gIB62"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="creator">
+                  <span>By Bro Code</span>
+                </div>
+              </div>
+              <h3>Responsive Design with Flexbox and Grid</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/fYq5PXgSsbE?si=KvHhMYbpsugcDQt4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/9zBsdzdE4sM?si=tPqrojzZeumLIFOy"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="creator">
+                  <span>By Web Dev Simplified</span>
+                </div>
+              </div>
+              <h3>Front-end Frameworks: React, Angular, Vue</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/SqcY0GlETPk?si=w53ty7nm2uMs__dl"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/k5E2AVpwsko?si=Gftfw25njxYF1vIt"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="creator">
+                  <span>By Programming with Mosh </span>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/FXpIoQ_rT_c?si=_4Uzr4apchvLGZD1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="creator"><span> By freeCodeCamp.org </span></div>
+              </div>
+              <h3>Backend Development: Node.js, Express</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/TlB_eWDSMt4?si=aDpo2vjZVadnPhr9"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="creator">
+                  <span>By Programming with Mosh </span>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/SccSCuHhOw0?si=IBO7dKZXLxrXCSky"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="creator"><span> By Web Dev Simplified </span></div>
+              </div>
+              <h3>Database Management: MongoDB, SQL</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/ofme2o29ngU?si=HkULTWSrpl1oUGar"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/p3qvj9hO_Bo?si=TtvqxTXVwl6iwY98"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="creator"><span> By Web Dev Simplified </span></div>
+              </div>
+              <h3>Deployment and Hosting</h3>
+              <hr class="line" />
+              <div class="chapter">
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/NQP89ish9t8?si=j2_gIUAWP4_7aW9M"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="creator"><span> By freeCodeCamp.org </span></div>
+              </div>
+            </div>
+          </div>
+          <div id="d-course" class="course1">
+            <h3>Introduction to Web Development</h3>
+            <hr class="line" />
+            <button class="btn-open" id="bto1">Open</button>
+            <div class="container-pdf" id="pdf-1">
+              <embed
+                src="https://northell.design/wp-content/uploads/2021/11/A_Complete_Web_Development_Guide_For_Non_Technical_Startup_Founder.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h3>HTML and CSS Fundamentals</h3>
+            <hr class="line" />
+            <button class="btn-open" id="bto2">Open</button>
+            <div class="container-pdf" id="pdf-2">
+              <embed
+                src="https://www3.cs.stonybrook.edu/~pfodor/courses/CSE316/L03-HTML_CSS.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+
+            <h3>JavaScript Programming</h3>
+            <hr class="line" />
+            <button class="btn-open" id="bto3">Open</button>
+            <div class="container-pdf" id="pdf-3">
+              <embed
+                src="https://autotelicum.github.io/Smooth-CoffeeScript/literate/js-intro.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+
+            <h3>Responsive Design with Flexbox and Grid</h3>
+            <hr class="line" />
+            <h2>FlexBox</h2>
+            <button class="btn-open" id="bto4">Open</button>
+            <div class="container-pdf" id="pdf-4">
+              <embed
+                src="https://www.uaeurope.com/downloads/IntroducingCSSFlexboxLayout.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h2>Grid</h2>
+            <button class="btn-open" id="bto5">Open</button>
+            <div class="container-pdf" id="pdf-5">
+              <embed
+                src="https://www.albasinicosta.co.uk/content-management/css-grid.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+
+            <h3>Front-end Frameworks: React, Angular, Vue</h3>
+            <hr class="line" />
+            <h2>React</h2>
+            <button class="btn-open" id="bto6">Open</button>
+            <div class="container-pdf" id="pdf-6">
+              <embed
+                src="https://www.lcg.ufrj.br/nodejs/books/react-beginners-handbook"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h2>Angular</h2>
+            <button class="btn-open" id="bto7">Open</button>
+            <div class="container-pdf" id="pdf-7">
+              <embed
+                src="https://riptutorial.com/Download/angular.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h2>Vue</h2>
+            <button class="btn-open" id="bto8">Open</button>
+            <div class="container-pdf" id="pdf-8">
+              <embed
+                src="https://assets.ctfassets.net/zojzzdop0fzx/VU1dEpLKscEoPc2JHDbkZ/cce207f9051d2b53e3782a4f43eb7b5a/A_Complete_Guide_to_VueJS_by_This_Dot_authored_by_Bilal_Haidar.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+
+            <h3>Backend Development: Node.js, Express</h3>
+            <hr class="line" />
+            <h2>Node.js</h2>
+            <button class="btn-open" id="bto9">Open</button>
+            <div class="container-pdf" id="pdf-9">
+              <embed
+                src="https://www.anuragkapur.com/assets/blog/programming/node/PDF-Guide-Node-Andrew-Mead-v3.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h2>Express</h2>
+            <button class="btn-open" id="bto10">Open</button>
+            <div class="container-pdf" id="pdf-10">
+              <embed
+                src="https://riptutorial.com/Download/express.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h3>Database Management: MongoDB, SQL</h3>
+            <hr class="line" />
+            <h2>MongoDB</h2>
+            <button class="btn-open" id="bto11">Open</button>
+            <div class="container-pdf" id="pdf-11">
+              <embed
+                src="https://riptutorial.com/Download/mongodb.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h2>SQL</h2>
+
+            <button class="btn-open" id="bto12">Open</button>
+            <div class="container-pdf" id="pdf-12">
+              <embed
+                src="https://sql.sh/ressources/cours-sql-sh-.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+            <h3>Deployment and Hosting</h3>
+            <hr class="line" />
+            <button class="btn-open" id="bto13">Open</button>
+            <div class="container-pdf" id="pdf-13">
+              <embed
+                src="https://hpi.de/fileadmin/user_upload/fachgebiete/plattner/teaching/SoftwaretechnikII/2020/SWT2_17_Deployment_and_DevOps.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <video
+        id="rotate-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        data-wf-ignore="true"
+        data-object-fit="cover"
+      >
+        <source
+          src="https://cdn.prod.website-files.com/662e228fa6dabae5dc92eaf4/662f8ab42141490d3ab1644b_7914827-hd_1280_720_30fps-transcode.mp4"
+          data-wf-ignore="true"
+        />
+        <source
+          src="https://cdn.prod.website-files.com/662e228fa6dabae5dc92eaf4/662f8ab42141490d3ab1644b_7914827-hd_1280_720_30fps-transcode.webm"
+          data-wf-ignore="true"
+          class="w-background-video"
+        />
+      </video>
+      <div class="cursor"></div>
+      <div class="courses">
+        <input
+          type="search"
+          placeholder="Search for courses"
+          id="search-course"
+          onkeydown="search(event);"
+        />
+        <button id="search-btn">Search</button>
+        <div class="courses-list">
+          <div class="course" data-course="web development">
+            <a href="/courses-pages/devW.html"
+              ><img src="/courses/wb.jpeg" alt="Web Development"
+            /></a>
+          </div>
+          <div class="course" data-course="programming language">
+            <a href="/courses-pages/prog.html"
+              ><img src="/courses/pl.jpg" alt="Programming Language"
+            /></a>
+          </div>
+          <div class="course">
+            <a href="#"
+              ><img src="/courses/da.avif" alt="Data Analysis" class="soon"
+            /></a>
+          </div>
+          <div class="course" data-course="cybersecurity">
+            <a href="#"
+              ><img src="/courses/cb.avif" alt="Cybersecurity" class="soon"
+            /></a>
+          </div>
+          <div class="course" data-course="Cloud Computing">
+            <a href="#"
+              ><img src="/courses/cp.jpeg" alt="Cloud Computing" class="soon"
+            /></a>
+          </div>
+          <div class="course" data-course="Data Management">
+            <a href="#"
+              ><img src="/courses/dm.jpeg" alt="Data Management" class="soon"
+            /></a>
+          </div>
+          <div class="course" data-course="Mobile App Development">
+            <a href="#"
+              ><img
+                src="/courses/mad.jpeg"
+                alt="Mobile App Development"
+                class="soon"
+            /></a>
+          </div>
+          <div class="course" data-course="Virtual and Augmented Reality">
+            <a href="#"
+              ><img
+                src="/courses/vr.jpeg"
+                alt="Virtual and Augmented Reality"
+                class="soon"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <button id="up-btn"><i class="bi bi-arrow-up"></i></button>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>
+              <i class="bi bi-envelope"></i> Email:
+              <a href="mailto:feedback.tech24@gmail.com" id="mailto"
+                >feedback.tech24@gmail.com</a
+              >
+            </p>
+            <p><i class="bi bi-telephone"></i> Phone: +1 (123) 456-7890</p>
+          </div>
+          <div class="footer-section social">
+            <h2>Follow Me</h2>
+            <a
+              href="https://www.facebook.com/youssef.benslimen.98"
+              target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://x.com/Youssef24Gaming" target="_blank"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/youssef-ben-slimen-35a545298/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/yukito__24/" target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Tech_24. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="../script.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
